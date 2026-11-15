@@ -25,7 +25,7 @@ console.log(greet2);
 Alla tre, var, let och const måste deklareras innan det används, men om vi använder "var" innan variabeln har deklarerats så får vi inget error meddelande i konsolen utan output "undefined". 
 
 let och const kan ej användas utanför scopet, "var" skiljer sig här och kan användas utanför scopet, vilket kan skapa problem. 
-__________________________________________________________________________________________
+
 
 ******************************************************************************************
 ******** 2. Reflektera över vad som händer vid olika placering av console.log().
@@ -33,17 +33,15 @@ ________________________________________________________________________________
 ******************************************************************************************
 
 FÖRE BLOCKET 
-Ingen av dessa tre går att nå före blocket eller innan de har deklarerats oavsett om detta sker inom scopet eller utanför, men vid "var" får vi inget felmeddelande i konsolen utan istället outputen "undefined". 
+Ingen av dessa tre går att nå före blocket eller innan de har deklarerats oavsett om detta sker inom scopet eller utanför. Let och const ger ReferenceError medans var ger undefined.  
 
 I BLOCKET 
 Alla tre går att nå för utskrift inom blocket. 
-
 
 UTANFÖR BLOCKET 
 Let och const måste användas inom scopet, variabeln går inte att nå utanför. Men "var" kan användas utanför scopet, vilket kan leda till problem. Till exempel så kan man med let och const använda samma variabelnamn inom olika scope utan att det leder till felaktiga utskrifter men använder vi var så blir det problem då den senare skriver över den tidigare variabeln. 
 Därför ska vi använda let och const istället för var. 
 
-__________________________________________________________________________________________
 */
 
 /* UPPGIFT 3 & 4 */
@@ -81,6 +79,7 @@ console.log("3 + 5 = " + add(3, 5));
 console.log(add(3, 5));
 console.log(add(null, 5));
 console.log(add(5)); */
+
 /* REFLEKTION UPPGIFT 3
 ******************************************************************************************
 ****** 1. Beskriv vad som händer om du hade skapat variabeln med nyckelordet let istället.
