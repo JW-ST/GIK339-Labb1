@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labb 1</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    Labb 1 - Välkommen
+  </body>
+</html>
+
+<!--------- Reflektion uppgift 1:--------
+_________________________________________
+_________________________________________
+_________________________________________
+
+****** 1. Vad har placeringen av <script>-taggen för betydelse? ******
+**********************************************************************
+
+Placeringen spelar roll då webbläsaren läser HTML-filen uppifrån och ned. När script-taggen ligger i <head> så läser webbläsaren in det samt kör scriptet innan HTML-filen läses in. Alltså innan några HTML element finns. 
+<script>-taggen i <body> istället innebär att script läses in och körs efter att hela HTML-sidan lästs in och elementen finns. 
+_________________________________________
+
+****** 2. Beskriver hur attributet defer fungerar: ******
+*********************************************************
+
+"defer" innebär att vi säger till webbläsaren att läsa in scriptet, men vänta med att köra det tills HTML har lästs in. Detta är det moderna sättet att göra det på, med "defer" kan vi ha det snyggt och tydligt i <head> utan de tidigare nackdelarna. 
+
+Metoden fungerar endast på externa script (de med src = " ")
+__________________________________________
+__________________________________________
+__________________________________________
+
+------------------------------------------------>
